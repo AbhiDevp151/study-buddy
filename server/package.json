@@ -1,4 +1,7 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@google/genai": "^2.29.1",
     "@google/generative-ai": "^0.24.1",
@@ -9,4 +12,4 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.11.2"
   }
-}
+} 

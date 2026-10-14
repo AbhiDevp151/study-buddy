@@ -2,8 +2,7 @@
  * Study Buddy - Frontend API Service (client/src/services/api.js)
  * Handles communication with the Express backend using JWT authentication.
  */
-
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('study_buddy_token');

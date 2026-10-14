@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAF8F4;
+    color: #0E2344;
+    font-family: 'Georgia', serif;
+  }
+}
+
+@media print {
+  /* Hide everything on the page by default when printing */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Make only the printable note area and its children visible */
+  #printable-note-area, #printable-note-area * {
+    visibility: visible;
+  }
+  
+  /* Position the note container cleanly at the top-left of the PDF page */
+  #printable-note-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+}

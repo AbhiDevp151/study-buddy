@@ -180,7 +180,7 @@ app.post('/api/tutor/chat', verifyJWT, async (req, res) => {
     const { message, file } = req.body;
 
     // REPLACE 'AIzaSyYourActualGeminiApiKeyHere' with your real Google AI Studio API key!
-   const apiKey = process.env.GEMINI_API_KEY || 'AQ.Ab8RN6LG4Xesd1k3yjCd1ChyXL6yMx6p_PO-cs26p8vde4SSVQ';
+  const apiKey = process.env.GEMINI_API_KEY;
 
     if (!apiKey || apiKey.includes('YourActualGeminiApiKey')) {
       return res.status(500).json({ error: 'Please put your real Gemini API key in server.js!' });
